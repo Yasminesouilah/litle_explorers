@@ -1,0 +1,280 @@
+@media (prefers-reduced-motion: no-preference) {
+  .home-reveal .age-intro,
+  .home-reveal .age-card,
+  .home-reveal.activities-section .section-heading,
+  .home-reveal .all-activities,
+  .home-reveal .camp-image,
+  .home-reveal .camp-content,
+  .home-reveal .gallery-heading,
+  .home-reveal .gallery-tile,
+  .home-reveal.testimonial-section > *,
+  .home-reveal.final-cta > :not(.cta-spark) {
+    opacity: 0;
+    translate: 0 22px;
+    transition: opacity 650ms ease, translate 650ms cubic-bezier(.2, .8, .2, 1);
+  }
+
+  .home-reveal.is-visible .age-intro,
+  .home-reveal.is-visible .age-card,
+  .home-reveal.is-visible.activities-section .section-heading,
+  .home-reveal.is-visible .all-activities,
+  .home-reveal.is-visible .camp-image,
+  .home-reveal.is-visible .camp-content,
+  .home-reveal.is-visible .gallery-heading,
+  .home-reveal.is-visible .gallery-tile,
+  .home-reveal.is-visible.testimonial-section > *,
+  .home-reveal.is-visible.final-cta > :not(.cta-spark) {
+    opacity: 1;
+    translate: 0 0;
+  }
+
+  .age-card:nth-child(2),
+  .gallery-tile:nth-child(2),
+  .testimonial-section > :nth-child(2) { transition-delay: 80ms; }
+  .age-card:nth-child(3),
+  .gallery-tile:nth-child(3),
+  .testimonial-section > :nth-child(3) { transition-delay: 150ms; }
+  .age-card:nth-child(4),
+  .gallery-tile:nth-child(4),
+  .testimonial-section > :nth-child(4) { transition-delay: 220ms; }
+  .gallery-tile:nth-child(5) { transition-delay: 290ms; }
+  .gallery-tile:nth-child(6) { transition-delay: 360ms; }
+
+  .age-decoration-one,
+  .age-decoration-two,
+  .age-decoration-three,
+  .camp-sun,
+  .camp-spark,
+  .quote-decoration,
+  .cta-spark,
+  .cta-illustration {
+    animation: home-decoration-float 4s ease-in-out infinite;
+  }
+
+  .age-decoration-two,
+  .camp-spark,
+  .cta-spark-two { animation-delay: 900ms; }
+  .age-decoration-three,
+  .quote-decoration { animation-delay: 1.6s; }
+  .cta-illustration { animation-duration: 5s; }
+
+  .hero .hero-copy > * {
+    animation: hero-copy-enter 720ms cubic-bezier(.2, .8, .2, 1) both;
+  }
+
+  .hero .hero-copy > :nth-child(1) { animation-delay: 100ms; }
+  .hero .hero-copy > :nth-child(2) { animation-delay: 220ms; }
+  .hero .hero-copy > :nth-child(3) { animation-delay: 360ms; }
+  .hero .hero-copy > :nth-child(4) { animation-delay: 480ms; }
+  .hero .hero-copy > :nth-child(5) { animation-delay: 600ms; }
+
+  .hero-photo {
+    animation: hero-photo-enter 900ms cubic-bezier(.16, 1, .3, 1) both;
+  }
+
+  .hero-photo-main { animation-delay: 260ms; }
+  .hero-photo-top { animation-delay: 420ms; }
+  .hero-photo-bottom { animation-delay: 560ms; }
+
+  .hero-orbit {
+    animation: hero-orbit-enter 1000ms ease-out both;
+  }
+
+  .orbit-a { animation-delay: 160ms; }
+  .orbit-b { animation-delay: 300ms; }
+
+  .floating-note {
+    animation: hero-note-enter 650ms cubic-bezier(.2, .8, .2, 1) both,
+      hero-note-float 4.5s ease-in-out 1.2s infinite;
+  }
+
+  .note-top { animation-delay: 620ms, 1.2s; }
+  .note-side { animation-delay: 760ms, 1.5s; }
+
+  .hero-sticker {
+    animation: hero-sticker-enter 650ms cubic-bezier(.2, .8, .2, 1) both,
+      hero-sticker-wiggle 4s ease-in-out 1.3s infinite;
+  }
+
+  .sticker-sun { animation-delay: 500ms, 1.3s; }
+  .sticker-flower { animation-delay: 680ms, 1.6s; }
+  .sticker-star { animation-delay: 820ms, 1.9s; }
+
+  .spark {
+    animation: hero-sparkle 2.8s ease-in-out infinite;
+  }
+
+  .spark-one { animation-delay: 0ms; }
+  .spark-two { animation-delay: 800ms; }
+  .spark-three { animation-delay: 1500ms; }
+
+  .hero-bottom-note span {
+    animation: hero-arrow-bounce 1.4s ease-in-out infinite;
+  }
+
+  .hero-bottom-note span:last-child {
+    animation-delay: 700ms;
+  }
+
+  .category-image,
+  .category-image img {
+    transition-duration: 420ms;
+  }
+
+  .why-copy,
+  .benefit {
+    transition: opacity 520ms ease, transform 520ms cubic-bezier(.2, .8, .2, 1);
+  }
+
+  .why-section:not(.is-visible) .why-copy,
+  .why-section:not(.is-visible) .benefit {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  .why-copy {
+    transition-delay: 80ms;
+  }
+
+  .benefit:nth-child(2) { transition-delay: 80ms; }
+  .benefit:nth-child(3) { transition-delay: 140ms; }
+  .benefit:nth-child(4) { transition-delay: 200ms; }
+  .benefit:nth-child(5) { transition-delay: 260ms; }
+  .benefit:nth-child(6) { transition-delay: 320ms; }
+
+  .benefit {
+    border-radius: 14px;
+    transition: opacity 520ms ease, transform 220ms ease, background-color 220ms ease;
+  }
+
+  .benefit:hover {
+    transform: translateY(-4px);
+    background-color: #fffaf0;
+  }
+
+  .benefit-icon {
+    transition: transform 220ms ease;
+  }
+
+  .benefit:hover .benefit-icon {
+    transform: rotate(-8deg) scale(1.1);
+  }
+
+  .dialog-backdrop {
+    animation: backdrop-enter 180ms ease-out both;
+  }
+
+  .dialog {
+    animation: dialog-enter 220ms cubic-bezier(.2, .8, .2, 1) both;
+  }
+
+  @keyframes backdrop-enter {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes dialog-enter {
+    from { opacity: 0; transform: translateY(12px) scale(.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  @keyframes hero-copy-enter {
+    from { opacity: 0; translate: 0 22px; }
+    to { opacity: 1; translate: 0 0; }
+  }
+
+  @keyframes hero-photo-enter {
+    from { opacity: 0; translate: 0 26px; scale: .9; }
+    to { opacity: 1; translate: 0 0; scale: 1; }
+  }
+
+  @keyframes hero-orbit-enter {
+    from { opacity: 0; scale: .82; }
+    to { opacity: 1; scale: 1; }
+  }
+
+  @keyframes hero-note-enter {
+    from { opacity: 0; scale: .7; }
+    to { opacity: 1; scale: 1; }
+  }
+
+  @keyframes hero-note-float {
+    0%, 100% { translate: 0 0; }
+    50% { translate: 0 -7px; }
+  }
+
+  @keyframes hero-sticker-enter {
+    from { opacity: 0; scale: .4; rotate: -35deg; }
+    to { opacity: 1; scale: 1; rotate: 0deg; }
+  }
+
+  @keyframes hero-sticker-wiggle {
+    0%, 100% { rotate: 0deg; }
+    50% { rotate: 10deg; }
+  }
+
+  @keyframes hero-sparkle {
+    0%, 100% { scale: .75; rotate: -12deg; opacity: .55; }
+    50% { scale: 1.2; rotate: 12deg; opacity: 1; }
+  }
+
+  @keyframes hero-arrow-bounce {
+    0%, 100% { translate: 0 0; }
+    50% { translate: 0 4px; }
+  }
+
+  @keyframes home-decoration-float {
+    0%, 100% { translate: 0 0; }
+    50% { translate: 0 -8px; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .category-image,
+  .category-image img {
+    transition: none;
+  }
+
+  .hero .hero-copy > *,
+  .hero-photo,
+  .hero-orbit,
+  .floating-note,
+  .hero-sticker,
+  .spark,
+  .hero-bottom-note span {
+    animation: none;
+  }
+
+  .home-reveal .age-intro,
+  .home-reveal .age-card,
+  .home-reveal.activities-section .section-heading,
+  .home-reveal .all-activities,
+  .home-reveal .camp-image,
+  .home-reveal .camp-content,
+  .home-reveal .gallery-heading,
+  .home-reveal .gallery-tile,
+  .home-reveal.testimonial-section > *,
+  .home-reveal.final-cta > :not(.cta-spark) {
+    opacity: 1;
+    translate: none;
+    transition: none;
+  }
+
+  .why-section .why-copy,
+  .why-section .benefit {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .age-decoration-one,
+  .age-decoration-two,
+  .age-decoration-three,
+  .camp-sun,
+  .camp-spark,
+  .quote-decoration,
+  .cta-spark,
+  .cta-illustration {
+    animation: none;
+  }
+}
