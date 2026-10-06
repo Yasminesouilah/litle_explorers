@@ -206,7 +206,6 @@ img { display: block; max-width: 100%; }
 .quote-decoration { position: absolute; left: 39px; top: 25px; color: #c1aaf0; font-family: 'Fredoka', sans-serif; font-size: 80px; line-height: 1; }
 .testimonial-section blockquote { margin: 23px auto 19px; max-width: 590px; font-family: 'Fredoka', sans-serif; font-size: clamp(19px, 2.6vw, 25px); line-height: 1.4; font-weight: 500; }
 .review-author { display: inline-flex; align-items: center; gap: 10px; text-align: left; }
-.review-author img { width: 36px; height: 36px; object-fit: cover; border-radius: 50%; }
 .review-author b, .review-author span { display: block; }
 .review-author b { font-size: 10px; }.review-author div span { color: #817a91; font-size: 8px; margin-top: 3px; }
 .review-author .review-stars { margin-left: 12px; color: #f5ad1c; letter-spacing: 2px; font-size: 10px; }

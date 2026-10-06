@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { testimonials } from '../../data/testimonials.js';
-import { photo } from '../../utils/images.js';
 import useScrollReveal from '../../hooks/useScrollReveal.js';
 import { useLanguage } from '../../context/LanguageContext.jsx';
 
@@ -43,7 +42,6 @@ function Testimonials() {
       <div className="testimonial-content" key={activeIndex} aria-live="polite" aria-atomic="true">
         <blockquote>{t(testimonial.quote)}</blockquote>
         <div className="review-author">
-          <img src={photo(testimonial.avatar, 100)} alt={`${t('Portrait de')} ${t(testimonial.author)}`} />
           <div><b>{t(testimonial.author)}</b><span>{t(testimonial.activity)}</span></div>
           <span className="review-stars" aria-label="5 étoiles">★★★★★</span>
         </div>
